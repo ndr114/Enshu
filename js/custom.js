@@ -103,15 +103,9 @@ function sample() {
 		time = new Date();
 		hour = time.getHours();
 		minute = time.getMinutes();
-		second = time.getSeconds();
 
 		//キャンバスをクリア
 		context.clearRect(0,0,width,height);
-
-		//デジタル時計の表示
-		context.font = "20pt Arial";
-		context.fillStyle = '#fafdff';
-		context.fillText(hour + ":" + minute, 70, 70 ); 
 
 		//色を指定する
 		context.strokeStyle = 'rgb(255,255,255)'; //枠線の色は白
